@@ -32,15 +32,27 @@
     ThreeViewController *threeVC = [[ThreeViewController alloc]init];
     [self setChildViewController:threeVC setTitle:@"文摘" setImage:@"tab_wz_icon" setViewBackgroundColor:[UIColor redColor]];
     FourViewController *fourVC = [[FourViewController alloc]init];
-    [self setChildViewController:fourVC setTitle:@"我的" setImage:@"tab_user_icon" setViewBackgroundColor:[UIColor yellowColor]];
+    [self setChildViewController:fourVC setTitle:@"我的" setImage:@"tab_user_icon" setViewBackgroundColor:[UIColor colorWithRed:0.186 green:1.000 blue:0.215 alpha:1.000]];
+    
+    
+    
 }
 
-// 添加子控制器
+
+
+/**
+ *  添加子控制器
+ *
+ *  @param viewController <#viewController description#>
+ *  @param title          <#title description#>
+ *  @param imageName      <#imageName description#>
+ *  @param color          <#color description#>
+ */
 -(void)setChildViewController:(UIViewController *)viewController setTitle:(NSString *)title setImage:(NSString *)imageName setViewBackgroundColor:(UIColor *)color{
+    viewController.navigationItem.title = title;
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewController];
     nav.title = title;
     nav.tabBarItem.image = [UIImage imageNamed:imageName];
-    nav.navigationItem.title = title;
     nav.view.backgroundColor = color;
     [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"commentary_num_bg"] forBarMetrics:UIBarMetricsDefault];
     [self addChildViewController:nav];
