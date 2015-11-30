@@ -12,13 +12,13 @@
 /**
  *  头部标题
  */
-@property(strong,nonatomic) NSString *headTitle;
+@property (strong,nonatomic) NSString           *headTitle;
 /**
  *  底部标题
  */
-@property(strong,nonatomic) NSString *footTitle;
+@property (strong,nonatomic) NSString           *footTitle;
 /**
  *  组中的行数组
  */
-@property(strong,nonatomic) NSArray *items;
+@property (strong,nonatomic) NSArray            *items;
 @end

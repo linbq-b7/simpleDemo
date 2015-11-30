@@ -58,7 +58,7 @@
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewController];
     nav.title = title;
     nav.tabBarItem.image = [UIImage imageNamed:imageName];
-    nav.view.backgroundColor = color;
+    //nav.view.backgroundColor = color;
     [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"commentary_num_bg"] forBarMetrics:UIBarMetricsDefault];
     [self addChildViewController:nav];
 }
