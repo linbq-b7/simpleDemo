@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B68D42C1C04B003001F9129 /* ThreeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B68D42B1C04B003001F9129 /* ThreeViewController.storyboard */; };
 		6B6CC4061C023815000C4297 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CC4051C023815000C4297 /* TabBarController.m */; };
 		6B6CC4091C023852000C4297 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CC4081C023852000C4297 /* NavigationController.m */; };
 		6B6CC40F1C023BD7000C4297 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CC40E1C023BD7000C4297 /* OneViewController.m */; };
@@ -17,9 +18,13 @@
 		6BA4B21F1BFF59CE00354620 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA4B21E1BFF59CE00354620 /* AppDelegate.m */; };
 		6BA4B2271BFF59CE00354620 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA4B2261BFF59CE00354620 /* Images.xcassets */; };
 		6BA4B22A1BFF59CE00354620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA4B2281BFF59CE00354620 /* LaunchScreen.storyboard */; };
+		6BBABBEC1C048248009B0A86 /* FourViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBABBEB1C048248009B0A86 /* FourViewController.storyboard */; };
+		6BBABBEF1C049690009B0A86 /* SettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBABBEE1C049690009B0A86 /* SettingItem.m */; };
+		6BBABBF21C0496AF009B0A86 /* GroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBABBF11C0496AF009B0A86 /* GroupItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B68D42B1C04B003001F9129 /* ThreeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThreeViewController.storyboard; sourceTree = "<group>"; };
 		6B6CC4041C023815000C4297 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		6B6CC4051C023815000C4297 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		6B6CC4071C023852000C4297 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
@@ -39,6 +44,11 @@
 		6BA4B2261BFF59CE00354620 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6BA4B2291BFF59CE00354620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BA4B22B1BFF59CE00354620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BBABBEB1C048248009B0A86 /* FourViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FourViewController.storyboard; sourceTree = "<group>"; };
+		6BBABBED1C049690009B0A86 /* SettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingItem.h; sourceTree = "<group>"; };
+		6BBABBEE1C049690009B0A86 /* SettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingItem.m; sourceTree = "<group>"; };
+		6BBABBF01C0496AF009B0A86 /* GroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupItem.h; sourceTree = "<group>"; };
+		6BBABBF11C0496AF009B0A86 /* GroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +210,7 @@
 			children = (
 				6B6CC41C1C024151000C4297 /* ThreeViewController.h */,
 				6B6CC41D1C024151000C4297 /* ThreeViewController.m */,
+				6B68D42B1C04B003001F9129 /* ThreeViewController.storyboard */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -214,6 +225,10 @@
 		6B6CC4151C0240FE000C4297 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6BBABBED1C049690009B0A86 /* SettingItem.h */,
+				6BBABBEE1C049690009B0A86 /* SettingItem.m */,
+				6BBABBF01C0496AF009B0A86 /* GroupItem.h */,
+				6BBABBF11C0496AF009B0A86 /* GroupItem.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -223,6 +238,7 @@
 			children = (
 				6B6CC41F1C024176000C4297 /* FourViewController.h */,
 				6B6CC4201C024176000C4297 /* FourViewController.m */,
+				6BBABBEB1C048248009B0A86 /* FourViewController.storyboard */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -335,8 +351,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B68D42C1C04B003001F9129 /* ThreeViewController.storyboard in Resources */,
 				6BA4B22A1BFF59CE00354620 /* LaunchScreen.storyboard in Resources */,
 				6BA4B2271BFF59CE00354620 /* Images.xcassets in Resources */,
+				6BBABBEC1C048248009B0A86 /* FourViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BBABBF21C0496AF009B0A86 /* GroupItem.m in Sources */,
 				6B6CC4061C023815000C4297 /* TabBarController.m in Sources */,
 				6B6CC41E1C024151000C4297 /* ThreeViewController.m in Sources */,
 				6B6CC4211C024176000C4297 /* FourViewController.m in Sources */,
@@ -355,6 +374,7 @@
 				6B6CC41B1C024135000C4297 /* TwoViewController.m in Sources */,
 				6BA4B21F1BFF59CE00354620 /* AppDelegate.m in Sources */,
 				6BA4B21C1BFF59CE00354620 /* main.m in Sources */,
+				6BBABBEF1C049690009B0A86 /* SettingItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +480,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.linbq-b7.simpleDemo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = simpleDemo;
 			};
 			name = Debug;
 		};
@@ -472,7 +492,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.linbq-b7.simpleDemo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = simpleDemo;
 			};
 			name = Release;
 		};

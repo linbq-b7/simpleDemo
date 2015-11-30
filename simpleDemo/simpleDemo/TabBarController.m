@@ -31,8 +31,13 @@
     [self setChildViewController:twoVC setTitle:@"技术" setImage:@"tab_js_icon" setViewBackgroundColor:[UIColor blueColor]];
     ThreeViewController *threeVC = [[ThreeViewController alloc]init];
     [self setChildViewController:threeVC setTitle:@"文摘" setImage:@"tab_wz_icon" setViewBackgroundColor:[UIColor redColor]];
-    FourViewController *fourVC = [[FourViewController alloc]init];
-    [self setChildViewController:fourVC setTitle:@"我的" setImage:@"tab_user_icon" setViewBackgroundColor:[UIColor colorWithRed:0.186 green:1.000 blue:0.215 alpha:1.000]];
+    
+    // 由storyboard初始化视图控制器
+    //FourViewController *fourVC = [[FourViewController alloc]init];
+    UIStoryboard *fourSB = [UIStoryboard storyboardWithName:@"FourViewController" bundle:nil];
+    FourViewController *fourVC = [fourSB instantiateInitialViewController];
+    
+    [self setChildViewController:fourVC setTitle:@"设置" setImage:@"tab_user_icon" setViewBackgroundColor:[UIColor colorWithRed:0.186 green:1.000 blue:0.215 alpha:1.000]];
     
     
     
